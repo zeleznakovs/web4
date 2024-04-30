@@ -138,7 +138,9 @@ export default function App() {
           Log Out
         </button>
       </div>
-
+        <div id="recaptcha-container">
+    <ReCAPTCHA sitekey="6LciVswpAAAAAA2q6CwL8zGSm6p-3JNRzN7QIOgs" onChange={onChange}/>
+  </div>
       <div id="avatar-container">
         {profileImageUrl && (
           <img src={profileImageUrl} alt="Avatar" className="avatar" />
